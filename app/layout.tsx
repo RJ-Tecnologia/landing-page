@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  // O título ideal deve ter entre 50-60 caracteres
-  title: "Zenit Finance | Gestão Financeira Inteligente",
+  // O título ideal deve ter entre 10-60 caracteres
+  title: "Zenit Finance",
   
   // A descrição ideal deve ter entre 140-160 caracteres
   description: "A plataforma definitiva para controlar seus gastos, investimentos e alcançar a liberdade financeira. Tecnologia de ponta desenvolvida por Zenit Tech.",
