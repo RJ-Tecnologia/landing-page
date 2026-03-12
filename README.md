@@ -25,6 +25,7 @@ Lucide React - Biblioteca de ícones elegantes e consistentes.
 
 TypeScript - Tipagem estática para um código mais robusto e seguro.
 
+
 🚀 Como Iniciar
 Pré-requisitos
 Node.js 18+ instalado.
@@ -49,7 +50,6 @@ npm install
 
 Inicie o servidor de desenvolvimento:
 
-code
 
 Bash
 
@@ -73,20 +73,3 @@ A segurança é o nosso pilar número um. O Zenit Finance utiliza criptografia d
 
 Desenvolvido com ❤️ por Zenit Tech
 
-code
-
-Code
-
-### Próximo Passo: Commit da Documentação
-
-Para finalizar essa parte, rode o comando no seu terminal:
-
-  
-
-```bash
-
-git  add  README.md
-
-git  commit  -m  "docs: atualizar README com informações detalhadas e branding da Zenit Tech"
-
-O  seu  projeto  agora  tem  uma  "cara"  de  produto  profissional  desde  o  primeiro  arquivo 
