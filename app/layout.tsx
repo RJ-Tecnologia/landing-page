@@ -13,10 +13,46 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zenit Finance",
-  description: "A plataforma definitiva pra controlar o seus, gastos investimentos e alcançar a liberdade financeira. Desenvolvido por Zenit Tech.",
+  // O título ideal deve ter entre 50-60 caracteres
+  title: "Zenit Finance | Gestão Financeira Inteligente",
+  
+  // A descrição ideal deve ter entre 140-160 caracteres
+  description: "A plataforma definitiva para controlar seus gastos, investimentos e alcançar a liberdade financeira. Tecnologia de ponta desenvolvida por Zenit Tech.",
+  
+  // Palavras-chave ajudam o Google a entender o nicho do site
+  keywords: [
+    "finanças pessoais", 
+    "controle de gastos", 
+    "investimentos", 
+    "liberdade financeira", 
+    "gestão de dinheiro",
+    "Zenit Finance"
+  ],
+
+  // Ícones (Favicon)
   icons: {
     icon: "/favicon.svg",
+    apple: "/favicon.svg", // Melhora a aparência em iPhones
+  },
+
+  // OpenGraph: Como o site aparece quando compartilhado (WhatsApp, LinkedIn, etc)
+  openGraph: {
+    title: "Zenit Finance | Domine seu dinheiro",
+    description: "Controle financeiro inteligente para quem busca liberdade.",
+    url: "https://zenitfinance.com.br",
+    siteName: "Zenit Finance",
+    locale: "pt_BR",
+    type: "website",
+  },
+
+  // Robots: Avisa ao Google que ele PODE indexar o site
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 
