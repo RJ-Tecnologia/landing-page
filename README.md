@@ -1,75 +1,115 @@
-🚀 Zenit Finance 
-A plataforma definitiva para controlar seus gastos, investimentos e alcançar a liberdade financeira. Desenvolvido com tecnologia de ponta pela Zenit Tech.
+# 🚀 Zenit Finance
 
-✨ Funcionalidades
-Dashboard Inteligente: Visualize sua saúde financeira em tempo real com gráficos interativos.
+A plataforma definitiva para **controlar seus gastos, investimentos e alcançar a liberdade financeira**.  
+Desenvolvido com tecnologia de ponta pela **Zenit Tech**.
 
-Categorização Automática: Nossa inteligência organiza seus gastos para você não perder tempo.
+---
 
-Segurança de Nível Bancário: Seus dados protegidos com criptografia AES-256 e protocolos avançados.
+## ✨ Funcionalidades
 
-Multi-dispositivo: Acesse suas finanças de qualquer lugar, seja no desktop ou mobile.
+### 📊 Dashboard Inteligente
+Visualize sua saúde financeira em **tempo real** com gráficos interativos.
 
-Design Premium: Interface moderna, intuitiva e totalmente otimizada para modo escuro.
+### 🧠 Categorização Automática
+Nossa inteligência organiza seus **gastos automaticamente**, para você não perder tempo.
 
-🛠️ Tecnologias Utilizadas
-Este projeto foi construído utilizando as melhores ferramentas do mercado:
+### 🔒 Segurança de Nível Bancário
+Seus dados protegidos com **criptografia AES-256** e protocolos avançados.
 
-Next.js - Framework React para alta performance.
+### 📱 Multi-dispositivo
+Acesse suas finanças de **qualquer lugar**, seja no desktop ou mobile.
 
-Tailwind CSS - Estilização moderna e responsiva.
+### 🎨 Design Premium
+Interface **moderna, intuitiva e otimizada para modo escuro**.
 
-Framer Motion - Animações fluidas e experiência interativa.
+---
 
-Lucide React - Biblioteca de ícones elegantes e consistentes.
+## 🛠️ Tecnologias Utilizadas
 
-TypeScript - Tipagem estática para um código mais robusto e seguro.
+Este projeto foi construído utilizando algumas das **melhores ferramentas do ecossistema moderno**:
 
+- **Next.js** — Framework React focado em performance.
+- **Tailwind CSS** — Estilização moderna e responsiva.
+- **Framer Motion** — Animações fluidas e interativas.
+- **Lucide React** — Biblioteca de ícones elegante e consistente.
+- **TypeScript** — Tipagem estática para um código mais robusto e seguro.
 
-🚀 Como Iniciar
-Pré-requisitos
-Node.js 18+ instalado.
+---
 
-NPM, Yarn ou PNPM.
+## 🚀 Como Iniciar
 
-Instalação
+### 📋 Pré-requisitos
+
+Antes de começar, você precisa ter instalado:
+
+- **Node.js 18+**
+- **NPM, Yarn ou PNPM**
+
+---
+
+### 📦 Instalação
+
 Clone o repositório:
 
+```bash
 git clone https://github.com/seu-usuario/zenit-finance.git
+```
 
-  
-  
+Entre na pasta do projeto:
 
-Instale as dependências:.
+```bash
+cd zenit-finance
+```
 
-<Bash>
+Instale as dependências:
 
+```bash
 npm install
+```
 
-  
+---
+
+### ▶️ Rodando o projeto
 
 Inicie o servidor de desenvolvimento:
 
-
-Bash
-
+```bash
 npm run dev
+```
 
-Abra http://localhost:3000 no seu navegador.
+Abra no navegador:
 
-📁 Estrutura do Projeto
+```
+http://localhost:3000
+```
 
-/app: Rotas, layouts e páginas principais (Next.js App Router).
+---
 
-/src/components: Componentes reutilizáveis e modulares da interface.
+## 📁 Estrutura do Projeto
 
-/src/lib: Utilitários, hooks e configurações globais.
+```
+app/              # Rotas, layouts e páginas principais (Next.js App Router)
+src/components/   # Componentes reutilizáveis da interface
+src/lib/          # Utilitários, hooks e configurações globais
+public/           # Ativos estáticos (logos, ícones e imagens)
+```
 
-/public: Ativos estáticos (Logos premium, ícones customizados e imagens).
+---
 
-🛡️ Segurança
+## 🛡️ Segurança
 
-A segurança é o nosso pilar número um. O Zenit Finance utiliza criptografia de ponta a ponta e autenticação segura para garantir que sua privacidade financeira nunca seja comprometida.
+A segurança é o **pilar número um** do Zenit Finance.
 
-Desenvolvido com ❤️ por Zenit Tech
+O sistema utiliza:
 
+- **Criptografia ponta a ponta**
+- **Protocolos modernos de segurança**
+- **Autenticação segura**
+
+Tudo para garantir que **sua privacidade financeira nunca seja comprometida**.
+
+---
+
+## ❤️ Sobre
+
+Desenvolvido com ❤️ por **Zenit Tech**
