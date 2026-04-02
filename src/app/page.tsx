@@ -1,19 +1,19 @@
-"use client"; // Obrigatório para usar states e funções
+"use client";
 
 import { useState } from 'react';
-import { LandingPage } from '@/src/components/LandingPage';
+import { LandingPage } from '@/components/LandingPage';
+import { env } from '@/env';
 
 export default function Home() {
   const [dark, setDark] = useState(false);
 
-  const handleLogin = () => console.log("Login");
   const handleTech = () => console.log("Tech Company");
-  const toggleTheme = () => setDark(!dark); // Inverte o valor de true/false
+  const toggleTheme = () => setDark(!dark);
 
   return (
     <main>
       <LandingPage 
-        onNavigateToLogin={handleLogin}
+        loginLink={env.NEXT_PUBLIC_APP_URL}
         onNavigateToTechCompany={handleTech}
         isDarkMode={dark}
         toggleTheme={toggleTheme}

@@ -17,9 +17,10 @@ import {
 } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { Logo } from '../components/logo';
+import Link from 'next/link';
 
 interface LandingPageProps {
-  onNavigateToLogin: () => void;
+  loginLink: string;
   onNavigateToTechCompany: () => void;
   isDarkMode: boolean;
   toggleTheme: () => void;
@@ -46,7 +47,7 @@ const FeatureCard = ({ icon: Icon, title, description, isDarkMode }: { icon: Rea
   </motion.div>
 );
 
-export const LandingPage = ({ onNavigateToLogin, onNavigateToTechCompany, isDarkMode, toggleTheme }: LandingPageProps) => {
+export const LandingPage = ({ loginLink, onNavigateToTechCompany, isDarkMode, toggleTheme }: LandingPageProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   return (
@@ -87,18 +88,22 @@ export const LandingPage = ({ onNavigateToLogin, onNavigateToTechCompany, isDark
             >
               {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
-            <button
-              onClick={onNavigateToLogin}
-              className="px-5 py-2.5 text-sm font-bold text-emerald-600 hover:bg-emerald-50 rounded-xl transition-colors"
-            >
-              Entrar
-            </button>
-            <button
-              onClick={onNavigateToLogin}
-              className="px-5 py-2.5 text-sm font-bold bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl shadow-lg shadow-emerald-600/20 transition-all active:scale-95"
-            >
-              Começar Agora
-            </button>
+            <Link href={loginLink}>
+              <button
+                type='button'
+                className="px-5 py-2.5 text-sm font-bold text-emerald-600 hover:bg-emerald-50 rounded-xl transition-colors"
+              >
+                Entrar
+              </button>
+            </Link>
+            <Link href={loginLink}>
+              <button
+                type='button'
+                className="px-5 py-2.5 text-sm font-bold bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl shadow-lg shadow-emerald-600/20 transition-all active:scale-95"
+              >
+                Começar Agora
+              </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -119,8 +124,12 @@ export const LandingPage = ({ onNavigateToLogin, onNavigateToTechCompany, isDark
             <a href="#features" className="py-2 text-lg font-medium">Recursos</a>
             <a href="#pricing" className="py-2 text-lg font-medium">Planos</a>
             <div className="h-px bg-current opacity-10 my-2" />
-            <button onClick={onNavigateToLogin} className="w-full py-3 font-bold text-center border rounded-xl">Entrar</button>
-            <button onClick={onNavigateToLogin} className="w-full py-3 font-bold text-center bg-emerald-600 text-white rounded-xl">Começar Agora</button>
+            <Link href={loginLink}>
+              <button type='button' className="w-full py-3 font-bold text-center border rounded-xl">Entrar</button>
+            </Link>
+            <Link href={loginLink}>
+              <button type='button' className="w-full py-3 font-bold text-center bg-emerald-600 text-white rounded-xl">Começar Agora</button>
+            </Link>
           </div>
         )}
       </nav>
@@ -173,13 +182,15 @@ export const LandingPage = ({ onNavigateToLogin, onNavigateToTechCompany, isDark
                 transition={{ delay: 0.3 }}
                 className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start"
               >
-                <button
-                  onClick={onNavigateToLogin}
-                  className="w-full sm:w-auto px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-2xl shadow-lg shadow-emerald-600/25 transition-all active:scale-95 flex items-center justify-center gap-2"
-                >
-                  Começar Gratuitamente
-                  <ArrowRight size={20} />
-                </button>
+                <Link href={loginLink}>
+                  <button
+                    type='button'
+                    className="w-full sm:w-auto px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-2xl shadow-lg shadow-emerald-600/25 transition-all active:scale-95 flex items-center justify-center gap-2"
+                  >
+                    Começar Gratuitamente
+                    <ArrowRight size={20} />
+                  </button>
+                </Link>
                 <button className={cn(
                   "w-full sm:w-auto px-8 py-4 font-bold rounded-2xl border transition-all active:scale-95 flex items-center justify-center gap-2",
                   isDarkMode ? "border-white/10 hover:bg-white/5 text-white" : "border-slate-200 hover:bg-slate-50 text-slate-700"
@@ -337,12 +348,14 @@ export const LandingPage = ({ onNavigateToLogin, onNavigateToTechCompany, isDark
           <p className="text-xl text-emerald-100 mb-10 max-w-2xl mx-auto">
             Junte-se a milhares de usuários que já estão no controle. Crie sua conta gratuita hoje mesmo.
           </p>
-          <button
-            onClick={onNavigateToLogin}
-            className="px-10 py-5 bg-white text-emerald-900 font-bold text-lg rounded-2xl shadow-2xl hover:bg-emerald-50 transition-all active:scale-95"
-          >
-            Criar Conta Gratuita
-          </button>
+          <Link href={loginLink}>
+            <button
+              type='button'
+              className="px-10 py-5 bg-white text-emerald-900 font-bold text-lg rounded-2xl shadow-2xl hover:bg-emerald-50 transition-all active:scale-95"
+            >
+              Criar Conta Gratuita
+            </button>
+          </Link>
           <p className="mt-6 text-sm text-emerald-200 opacity-80">
             Não é necessário cartão de crédito • Cancelamento a qualquer momento
           </p>
