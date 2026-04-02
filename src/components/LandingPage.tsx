@@ -7,14 +7,13 @@ import {
   Shield,
   Zap,
   Globe,
-  ChevronRight,
   LayoutDashboard,
   Smartphone,
   PieChart,
   Moon,
   Sun,
   Menu,
-  X
+  X,
 } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { Logo } from '../components/logo';
@@ -26,7 +25,7 @@ interface LandingPageProps {
   toggleTheme: () => void;
 }
 
-const FeatureCard = ({ icon: Icon, title, description, isDarkMode }: { icon: any, title: string, description: string, isDarkMode: boolean }) => (
+const FeatureCard = ({ icon: Icon, title, description, isDarkMode }: { icon: React.ElementType, title: string, description: string, isDarkMode: boolean }) => (
   <motion.div
     whileHover={{ y: -5 }}
     className={cn(
@@ -363,7 +362,7 @@ export const LandingPage = ({ onNavigateToLogin, onNavigateToTechCompany, isDark
             </button>
           </div>
           <div className={cn("text-sm", isDarkMode ? "text-slate-500" : "text-slate-400")}>
-            © 2024 Zenit Finance. Todos os direitos reservados.
+            © Zenit Finance 2026. Todos os direitos reservados.
           </div>
           <div className="flex gap-6">
             <a href="#" className={cn("text-sm hover:text-emerald-500 transition-colors", isDarkMode ? "text-slate-400" : "text-slate-500")}>Termos</a>
